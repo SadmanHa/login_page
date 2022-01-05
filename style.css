@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    background: #252525;
+}
+.login {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    /* background: lightblue; */
+    /* border: 1px solid rgb(231, 231, 12); */
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 8px rgb(78, 75, 75),inset -5px -5px 8px rgb(78, 75, 75);
+    
+}
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius:20px ;
+    overflow: hidden;
+}
+form::after {
+    content: '';
+    animation: glass 2s ease-in  infinite  ;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.445);
+    width: 20%;
+    height: 100%;
+    transform:translateX(-400px) skewX(50deg);
+    z-index: -1;
+}
+@keyframes glass {
+    20% {
+        background: rgb(191, 194, 20);
+        transform:translateX(300px) skewX(58deg);
+    }
+    40% {
+        background: rgba(221, 11, 11, 0.849);
+        transform:translateX(400px) skewX(58deg);
+    }
+    60% {
+        background: rgb(22, 160, 194);
+        transform:translateX(470px) skewX(58deg);
+    }
+    80% {
+        background: rgb(122, 86, 122);
+        transform:translateX(480px) skewX(58deg);
+    }
+    100% {
+        background: rgba(207, 96, 235, 0.829);
+        transform:translateX(800px) skewX(58deg);
+    }
+
+}
+.icon {
+    font-size: 60px;
+    color: rgb(231, 231, 12);
+    margin: 20px auto;
+}
+.input_feild {
+    margin: 8px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.input_feild input[type="email"],.input_feild input[type="password"] {
+    background: none;
+    width: 80%;
+    padding: 5px 5px;
+    border: none;
+    border-bottom: 2px solid rgb(231, 231, 12);
+    color: rgb(231, 231, 12);
+    font-size: 20px;
+}
+/* .input_feild input[type="email"]:active,.input_feild input[type="password"]:active {
+    border-bottom: 2px solid rgb(231, 231, 12);
+} */
+
+.input_icon .fas{
+    margin: 10px;
+    font-size: 20px;
+    color: rgb(231, 231, 12);
+}
+.sign_in,.sign_up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign_in button,.sign_up button {
+    background: none;
+    border: 2px solid rgb(231, 231, 12);
+    padding: 11px 17px;
+    color: rgb(231, 231, 12);
+    font-weight: 500;
+    font-size: 20px;
+    overflow: hidden;
+    /* width: 120px;
+    height: 60px; */
+}
+.sign_in button {
+    margin: 30px 20px;
+    
+}
+.sign_in button span {
+    display: inline-block;
+    animation: button 2s ease infinite;
+    /* transform: rotate(-20deg) ; */
+
+}
+.sign_up button {
+    margin: 20px auto;
+}
+.sign_up button a {
+    text-decoration: none;
+    outline: none;
+    color:rgb(231, 231, 12) ;
+}
+.sign_in button:hover,.sign_up button:hover {
+    background:rgb(231, 231, 12) ;
+    color: black;
+}
+@keyframes button {
+    0% {
+        transform: rotate(-20deg) scale(1);
+    }
+    50%{
+        transform: rotate(20deg) scale(1);
+    }
+    100% {
+        transform: rotate(-20deg) scale(1);
+    }
+}
+.forget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 10px;
+}
+.forget a {
+    text-decoration: none;
+    color:rgb(231, 231, 12) ;
+    outline: none;
+}
+.forget a:hover {
+    border-bottom: 1px solid rgb(231, 231, 12) ;
+}
+
