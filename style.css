@@ -129,6 +129,9 @@ form::after {
     outline: none;
     color:rgb(231, 231, 12) ;
 }
+.sign_up button:hover a{
+    color:black;
+}
 .sign_in button:hover,.sign_up button:hover {
     background:rgb(231, 231, 12) ;
     color: black;
