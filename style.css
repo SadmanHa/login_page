@@ -84,6 +84,7 @@ form::after {
     border-bottom: 2px solid rgb(231, 231, 12);
     color: rgb(231, 231, 12);
     font-size: 20px;
+    outline:none;
 }
 /* .input_feild input[type="email"]:active,.input_feild input[type="password"]:active {
     border-bottom: 2px solid rgb(231, 231, 12);
